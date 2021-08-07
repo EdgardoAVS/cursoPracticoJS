@@ -17,5 +17,6 @@ function calcularAlturaTriangulo() {
   const base = Number(inputBase.value);
 
   const alturaTrianguloIsosceles = alturaTriangulo(ladoA, ladoB, base);
-  alert("La altura del triangulo es: " + alturaTrianguloIsosceles);
+  const result = document.getElementById("result");
+  result.innerText = "La altura del triangulo es: " + alturaTrianguloIsosceles;
 }
